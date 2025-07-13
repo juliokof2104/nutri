@@ -55,7 +55,16 @@ export default function NutriWell() {
         </div>
 
         {/* Solicitar Consulta Button */}
-        <button className="hidden md:block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Solicitar Consulta</button>
+
+          <button className="hidden md:block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Solicitar Consulta</button>
+      </nav>
+
+      {/* Hero Section */}
+      <section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100">
+        <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-32 md:w-48 opacity-30 pointer-events-none" />
+        <div className="flex flex-col md:flex-row gap-12">
+
+       
       </nav>
 
       {/* Hero Section */}
@@ -64,6 +73,7 @@ export default function NutriWell() {
         <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-32 md:w-48 opacity-30 pointer-events-none z-0" />
 
         <div className="flex flex-col md:flex-row gap-12 z-10">
+
           <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
             <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />
           </div>
