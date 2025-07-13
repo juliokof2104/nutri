@@ -76,7 +76,7 @@ export default function NutriWell() {
       <section id="inicio" className="flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-green-100">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="relative w-64 h-96 mx-auto md:mx-0">
-            <img src="/src/assets/Laura Garcia.png" 
+            <img src="/assets/Laura Garcia.png"
                  alt="Laura García" 
                  className="absolute inset-0 w-full h-full object-cover" />
           </div>
