@@ -77,10 +77,8 @@ export default function NutriWell() {
       <section id="inicio" className="flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-green-100">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="relative w-64 h-96 mx-auto md:mx-0">
-            <img src="/assets/Laura Garcia.png"
-                 alt="Laura García" 
-                 className="absolute inset-0 w-full h-full object-cover" />
-          </div>
+          <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />            
+           </div>
           <div className="max-w-xl text-left mt-12">
             <h1 className=" font-raleway text-4xl md:text-5xl font-bold text-green-800 mb-4">Bienestar a tu alcance</h1>
             <p className="text-lg md:text-xl mb-6">Soy Laura García, nutricionista profesional. Te ayudaré a alcanzar tus metas de alimentación con planes personalizados y seguimiento continuo.</p>
