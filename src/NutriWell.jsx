@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaWhatsapp, FaUserShield, FaChartBar, FaUtensils, FaChartLine, FaBars, FaTimes, FaStar } from "react-icons/fa";
+import lauraImage from './laura-garcia.webp';
 
 export default function NutriWell() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
