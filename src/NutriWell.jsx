@@ -13,6 +13,7 @@ import lauraImage from './laura-garcia.webp';
 import hoja from './assets/hojas.svg';
 import fruta1 from './assets/fruta1.svg';
 import fruta2 from './assets/fruta2.svg';
+import ensalada from './assets/ensalada.svg';
 
 export default function NutriWell() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,9 +74,12 @@ export default function NutriWell() {
       </section>
 
       {/* Sobre mí */}
-      <section id="sobre-mi" className="px-6 py-12 bg-white">
+      <section id="sobre-mi" className="relative px-6 py-12 bg-white">
+        <img src={ensalada} alt="decoración ensalada" className="hidden md:block absolute -top-8 right-8 w-20 opacity-20 pointer-events-none" />
         <h2 className="font-raleway text-2xl md:text-3xl font-bold text-center mb-8">Sobre mí</h2>
-        <p className="max-w-2xl mx-auto text-center text-lg md:text-xl">Con más de 10 años de experiencia, mi pasión es guiar a mis pacientes hacia un estilo de vida saludable y sostenible. Estoy especializada en nutrición deportiva y trastornos alimentarios.</p>
+        <div className="max-w-3xl mx-auto text-justify columns-1 md:columns-2 gap-6">
+          <p>Con más de 10 años de experiencia, mi pasión es guiar a mis pacientes hacia un estilo de vida saludable y sostenible. Estoy especializada en nutrición deportiva y trastornos alimentarios.</p>
+        </div>
       </section>
 
       {/* Servicios */}
