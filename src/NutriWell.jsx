@@ -30,6 +30,14 @@ export default function NutriWell() {
           <span className="text-green-600">🍃</span> 
           <span className="text-2xl font-bold text-green-700 font-raleway">NutriWell</span>
         </div>
+
+        {/* PRUEBA DE HOJA SVG */}
+        <div className="relative h-64 bg-white">
+          <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-32 z-50" />
+        </div>
+
+
+
         
         {/* Mobile Menu Button */}
         <button 
