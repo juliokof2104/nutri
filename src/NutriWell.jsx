@@ -65,8 +65,8 @@ export default function NutriWell() {
 
       {/* Hero Section */}
       <section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100 overflow-hidden">
-        <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-16 md:w-32 opacity-30 pointer-events-none z-0" />
-        <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-16 md:w-32 opacity-30 pointer-events-none z-0" />
+        <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-12 md:w-20 opacity-30 pointer-events-none z-0" />
+        <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-12 md:w-20 opacity-30 pointer-events-none z-0" />
 
         <div className="flex flex-col md:flex-row gap-12 z-10">
           <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
@@ -156,11 +156,11 @@ export default function NutriWell() {
 
       {/* Footer */}
       <footer className="relative bg-white px-6 py-8 text-center text-sm text-gray-600 border-t font-lato">
-        <img src={fruta1} alt="decoración fruta" className="absolute -top-4 left-0 w-20 md:w-32 opacity-30 pointer-events-none" />
-        <img src={fruta2} alt="decoración fruta" className="absolute -top-4 right-0 w-20 md:w-32 opacity-30 pointer-events-none" />
+        <img src={fruta1} alt="decoración fruta" className="absolute -top-4 left-0 w-12 md:w-16 opacity-30 pointer-events-none" />
+        <img src={fruta2} alt="decoración fruta" className="absolute -top-4 right-0 w-12 md:w-16 opacity-30 pointer-events-none" />
         <p className="mb-2">¿Listo para transformar tu alimentación?</p>
         <a href="#" className="inline-block mb-4 bg-gradient-to-r from-green-400 to-green-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg">Reservá tu consulta</a>
-        <div>2024 NutriWell. Todos los derechos reservados.</div>
+        <div>2025 NutriWell. Todos los derechos reservados.</div>
       </footer>
 
       {/* WhatsApp Floating Button */}
