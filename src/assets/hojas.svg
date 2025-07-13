@@ -1,3 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50 10 C20 20 20 60 50 90 C80 60 80 20 50 10 Z" fill="#66bb6a"/>
+</svg>
+
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -22,3 +26,4 @@
 	c4.349-8.202,14.525-11.325,22.725-6.976l101.531,53.841c43.538,19.533,71.631,62.896,71.631,110.652v27.019
 	C442.547,504.476,435.021,512.001,425.737,512.001z"/>
 </svg>
+
