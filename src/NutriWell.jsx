@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp, FaUserShield, FaChartBar, FaUtensils, FaChartLine, FaBars, FaTimes, FaStar } from "react-icons/fa";
-import lauraImage from './laura-garcia.webp';
-import hoja from './assets/hojas.svg';
-import fruta1 from './assets/fruta1.svg';
-import fruta2 from './assets/fruta2.svg';
+import {
+  FaWhatsapp,
+  FaUserShield,
+  FaChartBar,
+  FaUtensils,
+  FaChartLine,
+  FaBars,
+  FaTimes,
+  FaStar,
+} from "react-icons/fa";
+import lauraImage from "./laura-garcia.webp";
+import hoja from "./assets/hojas.svg";
+import fruta1 from "./assets/fruta1.svg";
+import fruta2 from "./assets/fruta2.svg";
 
 export default function NutriWell() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,36 +20,27 @@ export default function NutriWell() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="font-lato text-gray-800 bg-gray-50">
       {/* Navbar */}
-      <nav className={`flex flex-col md:flex-row justify-between items-center p-4 bg-white shadow-sm ${isScrolled ? 'transform scale-95' : 'transform scale-100'} transition-transform duration-300 sticky top-0 z-10`}>
+      <nav
+        className={`flex flex-col md:flex-row justify-between items-center p-4 bg-white shadow-sm ${
+          isScrolled ? "transform scale-95" : "transform scale-100"
+        } transition-transform duration-300 sticky top-0 z-10`}
+      >
         <div className="flex items-center gap-2">
-          <span className="text-green-600">🍃</span> 
+          <span className="text-green-600">🍃</span>
           <span className="text-2xl font-bold text-green-700 font-raleway">NutriWell</span>
         </div>
 
-        {/* PRUEBA DE HOJA SVG */}
-        <div className="relative h-64 bg-white">
-          <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-32 z-50" />
-        </div>
-
-
-
-        
         {/* Mobile Menu Button */}
-        <button 
+        <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden text-gray-600 hover:text-green-600"
         >
@@ -60,41 +60,26 @@ export default function NutriWell() {
         </ul>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} fixed top-4 right-4 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4`}>
+        <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} fixed top-4 right-4 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4`}>
           <ul className="space-y-4 text-sm font-medium">
-            <li onClick={() => setIsMenuOpen(false)}>
-              <a href="#inicio" className="hover:text-green-600 block font-raleway">Inicio</a>
-            </li>
-            <li onClick={() => setIsMenuOpen(false)}>
-              <a href="#sobre-mi" className="hover:text-green-600 block font-raleway">Sobre mí</a>
-            </li>
-            <li onClick={() => setIsMenuOpen(false)}>
-              <a href="#servicios" className="hover:text-green-600 block font-raleway">Servicios</a>
-            </li>
-            <li onClick={() => setIsMenuOpen(false)}>
-              <a href="#testimonios" className="hover:text-green-600 block font-raleway">Testimonios</a>
-            </li>
-            <li onClick={() => setIsMenuOpen(false)}>
-              <a href="#contacto" className="hover:text-green-600 block font-raleway">Contacto</a>
-            </li>
+            {['inicio', 'sobre-mi', 'servicios', 'testimonios', 'contacto'].map((id) => (
+              <li key={id} onClick={() => setIsMenuOpen(false)}>
+                <a href={`#${id}`} className="hover:text-green-600 block font-raleway capitalize">{id.replace('-', ' ')}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Solicitar Consulta Button */}
-          <button className="hidden md:block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Solicitar Consulta</button>
+        <button className="hidden md:block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Solicitar Consulta</button>
       </nav>
 
       {/* Hero Section */}
+      <section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100 overflow-hidden">
+        <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-32 md:w-48 opacity-30 pointer-events-none z-0" />
+        <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-32 md:w-48 opacity-30 pointer-events-none z-0" />
 
-      <section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100">
-    <img
-  src={hoja}
-  alt="decoración hoja"
-  className="absolute bottom-0 right-0 w-32 md:w-48 bg-red-200 border border-black z-50"
-/>
-
-        
-          <div className="flex flex-col md:flex-row gap-12">
+        <div className="flex flex-col md:flex-row gap-12 z-10">
           <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
             <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />
           </div>
