@@ -76,18 +76,25 @@ export default function NutriWell() {
       </section>
 
       {/* Sobre mí */}
-      <section id="sobre-mi" className="relative px-6 py-12 bg-white">
+      <section id="sobre-mi" className="relative px-6 py-20 bg-white overflow-hidden">
+  {/* Acelgas decorativas grandes detrás del texto */}
+  <img src={acelga} alt="decoración acelga izquierda" 
+       className="absolute top-10 left-[-40px] w-64 opacity-10 z-0 pointer-events-none" />
+  <img src={acelga} alt="decoración acelga derecha" 
+       className="absolute bottom-10 right-[-40px] w-64 opacity-10 z-0 pointer-events-none rotate-[12deg]" />
 
+  {/* Contenido principal */}
+  <div className="relative z-10">
+    <h2 className="font-raleway text-2xl md:text-3xl font-bold text-center mb-8">Sobre mí</h2>
+    <div className="max-w-3xl mx-auto text-justify text-base md:text-lg leading-relaxed columns-1 md:columns-2 gap-10">
+      <p>
+        Con más de 10 años de experiencia, mi pasión es guiar a mis pacientes hacia un estilo de vida saludable y sostenible.
+        Estoy especializada en nutrición deportiva y trastornos alimentarios.
+      </p>
+    </div>
+  </div>
+</section>
 
-        <h2 className="font-raleway text-2xl md:text-3xl font-bold text-center mb-8">Sobre mí</h2>
-        <div className="max-w-3xl mx-auto text-justify columns-1 md:columns-2 gap-10">
-          <p>Con más de 10 años de experiencia, mi pasión es guiar a mis pacientes hacia un estilo de vida saludable y sostenible. Estoy especializada en nutrición deportiva y trastornos alimentarios.</p>
-        </div>
-        
-        <img src={acelga} alt="decoración acelga" className="absolute bottom-0 left-0 w-16 md:w-24 opacity-30 pointer-events-none z-0" />
-        <img src={acelga} alt="decoración acelga inclinada" className="absolute bottom-0 left-10 w-12 md:w-20 opacity-30 pointer-events-none z-0 rotate-[15deg]" />
-
-       </section>
 
       {/* Servicios */}
       <section id="servicios" className="px-6 py-12 bg-gray-50">
