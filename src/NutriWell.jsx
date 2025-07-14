@@ -59,19 +59,31 @@ export default function NutriWell() {
         <button className="hidden md:block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Solicitar Consulta</button>
       </nav>
 
+
       {/* Hero */}
-      {/* Hero */}
-<section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100 overflow-hidden">
-  <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-20 md:w-48 opacity-30 pointer-events-none z-0" />
-  <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-20 md:w-48 opacity-30 pointer-events-none z-0" />
-  <div className="flex flex-col md:flex-row gap-12 z-10">
+      <section id="inicio" className="relative px-6 py-20 bg-white overflow-hidden">
+  {/* Hojas decorativas */}
+  <img src={hoja} alt="decoración hoja izquierda" className="absolute top-[100px] left-[-60px] w-64 opacity-10 z-0 pointer-events-none" />
+  <img src={hoja} alt="decoración hoja derecha" className="absolute bottom-10 right-[-40px] w-64 opacity-10 z-0 pointer-events-none rotate-[12deg]" />
+
+  {/* Contenido */}
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+    {/* Imagen de Laura */}
     <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
       <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />
     </div>
-    <div className="max-w-xl text-left mt-12">
-      <h1 className="font-raleway text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-green-600 to-green-800 text-transparent bg-clip-text mb-4">Bienestar a tu alcance</h1>
-      <p className="text-lg md:text-xl mb-6">Soy Laura García, nutricionista profesional. Te ayudaré a alcanzar tus metas de alimentación con planes personalizados y seguimiento continuo.</p>
-      <button className="bg-gradient-to-r from-green-400 to-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg">Solicitar Consulta</button>
+
+    {/* Texto */}
+    <div className="max-w-xl text-center md:text-left">
+      <h1 className="font-raleway text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-green-600 to-green-800 text-transparent bg-clip-text mb-4">
+        Bienestar a tu alcance
+      </h1>
+      <p className="text-lg md:text-xl mb-6">
+        Soy Laura García, nutricionista profesional. Te ayudaré a alcanzar tus metas de alimentación con planes personalizados y seguimiento continuo.
+      </p>
+      <button className="bg-gradient-to-r from-green-400 to-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg">
+        Solicitar Consulta
+      </button>
     </div>
   </div>
 </section>
