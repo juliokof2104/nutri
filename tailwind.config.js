@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Lato', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
         raleway: ['Raleway', 'sans-serif'],
       },
 
