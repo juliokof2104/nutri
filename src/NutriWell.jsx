@@ -79,7 +79,7 @@ export default function NutriWell() {
       <section id="sobre-mi" className="relative px-6 py-20 bg-white overflow-hidden">
   {/* Acelgas decorativas grandes detrás del texto */}
   <img src={acelga} alt="decoración acelga izquierda" 
-       className="absolute top-10 left-[-40px] w-64 opacity-10 z-0 pointer-events-none" />
+       className="absolute top-[100px] left-[-60px] w-64 opacity-10 z-0 pointer-events-none" />
   <img src={acelga} alt="decoración acelga derecha" 
        className="absolute bottom-10 right-[-40px] w-64 opacity-10 z-0 pointer-events-none rotate-[12deg]" />
 
@@ -95,8 +95,7 @@ export default function NutriWell() {
   </div>
 </section>
 
-
-      {/* Servicios */}
+        {/* Servicios */}
       <section id="servicios" className="px-6 py-12 bg-gray-50">
         <h2 className="font-raleway text-2xl md:text-3xl font-bold text-center mb-8">Servicios Destacados</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto font-raleway">
