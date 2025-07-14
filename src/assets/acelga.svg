@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="800" height="800">
+  <g fill="none" stroke="#37a069" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 8C32 8 12 40 12 64s20 56 52 56 52-32 52-56S96 8 64 8z" fill="#a4d65e"/>
+    <path d="M64 8v112"/>
+    <path d="M32 32l32 32 32-32"/>
+  </g>
+</svg>
+
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -39,3 +48,4 @@
 		c0.276-1.98,0.735-3.734,1.304-5.292C27.456,24.578,27.507,24.503,27.545,24.419z"/>
 </g>
 </svg>
+
