@@ -84,8 +84,8 @@ export default function NutriWell() {
           <p>Con más de 10 años de experiencia, mi pasión es guiar a mis pacientes hacia un estilo de vida saludable y sostenible. Estoy especializada en nutrición deportiva y trastornos alimentarios.</p>
         </div>
         
-        <img src={acelga} alt="decoración acelga" className="hidden md:block absolute -bottom-6 left-0 w-20 opacity-20 -rotate-12 pointer-events-none" />
-        <img src={acelga} alt="decoración acelga" className="hidden md:block absolute -bottom-6 left-12 w-20 opacity-20 pointer-events-none" />
+        <img src={acelga} alt="decoración acelga" className="absolute top-4 left-2 w-16 md:w-32 opacity-30 pointer-events-none z-0" />
+        <img src={acelga} alt="decoración acelga inclinada" className="absolute top-8 right-4 w-16 md:w-32 opacity-30 pointer-events-none z-0 rotate-[15deg]" />
 
        </section>
 
