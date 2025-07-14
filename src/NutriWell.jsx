@@ -85,7 +85,7 @@ export default function NutriWell() {
         </div>
         
         <img src={acelga} alt="decoración acelga" className="absolute bottom-0 left-0 w-16 md:w-24 opacity-30 pointer-events-none z-0" />
-        <img src={acelga} alt="decoración acelga inclinada" className="absolute bottom-0 right-0 w-16 md:w-24 opacity-30 pointer-events-none z-0 rotate-[10deg]" />
+        <img src={acelga} alt="decoración acelga inclinada" className="absolute bottom-4 left-10 w-12 md:w-20 opacity-30 pointer-events-none z-0 rotate-[15deg]" />
 
        </section>
 
