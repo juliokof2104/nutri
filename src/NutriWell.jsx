@@ -60,9 +60,9 @@ export default function NutriWell() {
       </nav>
 
       {/* Hero */}
-      <section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100 overflow-hidden">
-        <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-20 md:w-48 opacity-30 pointer-events-none z-0" />
-        <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-16 md:w-32 opacity-30 pointer-events-none z-0" />
+      <section id="inicio" className="relative px-6 py-20 bg-white overflow-hidden">
+        <img src={hoja} alt="decoración hoja" className="absolute top-[100px] left-[-60px] w-64 opacity-10 z-0 pointer-events-none" />
+        <img src={hoja} alt="decoración hoja" className="absolute bottom-10 right-[-40px] w-64 opacity-10 z-0 pointer-events-none rotate-[12deg]" />
         <div className="flex flex-col md:flex-row gap-12 z-10">
           <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
             <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />
