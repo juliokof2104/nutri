@@ -60,20 +60,22 @@ export default function NutriWell() {
       </nav>
 
       {/* Hero */}
-      <section id="inicio" className="relative px-6 py-20 bg-white overflow-hidden">
-        <img src={hoja} alt="decoración hoja" className="absolute top-[100px] left-[-60px] w-64 opacity-10 z-0 pointer-events-none" />
-        <img src={hoja} alt="decoración hoja" className="absolute bottom-10 right-[-40px] w-64 opacity-10 z-0 pointer-events-none rotate-[12deg]" />
-        <div className="flex flex-col md:flex-row gap-12 z-10">
-          <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
-            <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />
-          </div>
-          <div className="max-w-xl text-left mt-12">
-            <h1 className="font-raleway text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-green-600 to-green-800 text-transparent bg-clip-text mb-4">Bienestar a tu alcance</h1>
-            <p className="text-lg md:text-xl mb-6">Soy Laura García, nutricionista profesional. Te ayudaré a alcanzar tus metas de alimentación con planes personalizados y seguimiento continuo.</p>
-            <button className="bg-gradient-to-r from-green-400 to-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg">Solicitar Consulta</button>
-          </div>
-        </div>
-      </section>
+      {/* Hero */}
+<section id="inicio" className="relative flex flex-col md:flex-row items-start justify-center px-6 py-20 bg-gradient-to-r from-green-100 via-white to-green-100 overflow-hidden">
+  <img src={hoja} alt="decoración hoja" className="absolute bottom-0 right-0 w-20 md:w-48 opacity-30 pointer-events-none z-0" />
+  <img src={hoja} alt="decoración hoja" className="absolute top-0 left-0 w-20 md:w-48 opacity-30 pointer-events-none z-0" />
+  <div className="flex flex-col md:flex-row gap-12 z-10">
+    <div className="relative w-64 h-96 mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-xl">
+      <img src={lauraImage} alt="Laura García" className="absolute inset-0 w-full h-full object-cover" />
+    </div>
+    <div className="max-w-xl text-left mt-12">
+      <h1 className="font-raleway text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-green-600 to-green-800 text-transparent bg-clip-text mb-4">Bienestar a tu alcance</h1>
+      <p className="text-lg md:text-xl mb-6">Soy Laura García, nutricionista profesional. Te ayudaré a alcanzar tus metas de alimentación con planes personalizados y seguimiento continuo.</p>
+      <button className="bg-gradient-to-r from-green-400 to-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg">Solicitar Consulta</button>
+    </div>
+  </div>
+</section>
+
 
       {/* Sobre mí */}
       <section id="sobre-mi" className="relative px-6 py-20 bg-white overflow-hidden">
