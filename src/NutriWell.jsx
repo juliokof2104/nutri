@@ -86,7 +86,6 @@ export default function NutriWell() {
         <img src={acelga} alt="decoración acelga" className="hidden md:block absolute -bottom-6 left-0 w-20 opacity-20 -rotate-12 pointer-events-none" />
         <img src={acelga} alt="decoración acelga" className="hidden md:block absolute -bottom-6 left-12 w-20 opacity-20 pointer-events-none" />
 
-        <img src={ensalada} alt="decoración ensalada" className="hidden md:block absolute -top-8 right-8 w-20 opacity-20 pointer-events-none" />
 
         <img src={acelga} alt="decoración acelga" className="hidden md:block absolute -top-8 right-8 w-20 opacity-20 pointer-events-none" />
 
